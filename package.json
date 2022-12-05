@@ -1,0 +1,22 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "annuaire node/express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "api-nodeJS"
+  },
+  "keywords": [
+    "nodeJS",
+    "express"
+  ],
+  "author": "Yonathan Darmon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
