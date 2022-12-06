@@ -6,7 +6,6 @@ router.get('/', (req, res) => {
     const groupes = db.query('SELECT name FROM groupe', (error, result, fields) => {
         if (error) throw error;
         res.send(result)
-        db.end()
     })
     res.statusCode = 200;
 })
@@ -14,7 +13,6 @@ router.get('/users', (req, res) => {
     const groupes = db.query('SELECT groupe.name, user.firstName, user.lastname FROM groupe INNER JOIN user on user.groupe_id=groupe.id', (error, result, fields) => {
         if (error) throw error;
         res.send(result)
-        db.end()
     })
     res.statusCode = 200;
 })
