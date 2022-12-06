@@ -3,7 +3,6 @@ const router = express.Router();
 const db = require('../models/database')
 
 router.get('/', (req, res) => {
-    console.log(db);
     const users = db.query('SELECT * FROM user', (error, result, fields) => {
         if (error) throw error;
         res.send(result)
